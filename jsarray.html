@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js Array</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        // Manual array
+        let arraygirls = new Array("su su", "hal hal", "mya mya");
+        console.log(arraygirls);
+        console.log(arraygirls[1]);
+
+        console.log(arraygirls[3]); // undefined
+
+        let arrboys = ['mg mg', 'kyaw kyaw', 'nyi nyi', 'zaw zaw'];
+
+        console.log(arrboys[0]);
+        console.log(arrboys[3]);
+
+        let x = [1200,200,40,5000,120];
+
+        console.log(x);
+        
+        let y = ["hello", 1200, true, undefined, null, new Date(),{firstname:'kyaw kyaw',lastname:'aung'}];
+        console.log(y);
+        console.log(y);
+
+        console.log(y[2]);
+        console.log(y[5]);
+        console.log(y[6]);
+        console.log(y[6].firstname);
+        console.log(y[6].lastname);
+
+        let z = [123,1300,20,9,100];
+
+        console.log(z);
+        console.log(z[3]);
+        console.log(z.indexOf(1300)); // result = 1
+        console.log(z.indexOf(12)); // result = -1
+
+        // String is Character Array in js
+        let myfriend = "Aung Ko Ko";
+        console.log(myfriend);
+        console.log(typeof myfriend);
+        console.log(myfriend.length);
+        console.log(myfriend[0]);
+        console.log(myfriend[5]);
+
+        let m = [];
+
+        m[3] = 'orange';
+        m[0] = 'red';
+        m[2] = 'blue';
+        m[1] = 'black';
+        m[7] = 'violet';
+
+        console.log(m);
+        console.log(m.length);
+        console.log(m[1]);
+        console.log(m[5]); // undefined
+
+        const n = ["red","blue","green","black"];
+
+        console.log(n);
+
+        n[1] = "pink";
+        n[4] = "violet";
+
+        console.log(n);
+
+        // Add new value to array (addon to the end)
+        n.push("gold");
+        n.push("silver");
+        n.push("orange","white");
+        console.log(n);
+
+        // Add new value to array (addon to front)
+        n.unshift("tomato");
+        n.unshift("skyblue","gray");
+        console.log(n);
+
+        // remove value & index (remove to front)
+        n.shift();
+        n.shift();
+        console.log(n);
+
+        // remove value & index (remove to end)
+        n.pop();
+        n.pop();
+        console.log(n);
+
+        // delete value to array (delete)
+        delete n[2];
+        console.log(n);
+
+        // ဘယ်ကစ/ဘယ်မှာဆုံး index,space(length)
+        let q = n.splice(1,5);
+        console.log(q);
+        console.log(q.length);
+
+        // array combine    
+        const arr1 = ["aung aung","kyaw kyaw","mg mg","zaw zaw"];
+        const arr2 = ["lu lu","su su","ma ma"];
+        const arr3 = [100,200,300];
+
+        console.log(arr1 + arr2); // oki but this is not array this is string
+        console.log(arr1.concat(arr2));
+        console.log(arr3.concat(arr2));
+
+        // array sorting ( sort is work on only string )
+        const arr4 = arr1.concat(arr2);
+        console.log(arr4);
+        console.log(arr4[4]);
+
+        // sort is a,b,c, to z 
+        // console.log(arr4.sort());
+
+        // sort is add reverse
+        console.log(arr4.sort());
+        console.log(arr4.reverse());
+
+        const arr5 = [200,100,30,4,700,300];
+        console.log(arr5.sort());
+    </script>
+</body>
+
+</html>
